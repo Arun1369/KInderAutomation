@@ -1,0 +1,59 @@
+
+{
+    "pageLoadTimeout": 160000,
+    "defaultCommandTimeout":14000,
+    "requestTimeout" : 14000,
+    "responseTimeout" : 14000,
+    "baseUrl22": "https://admin.kinders.develop.groony.jp", 
+    "baseUrl1": "https://www.kinders.develop.groony.jp", 
+    "baseUrl2": "http://119.82.96.68/kinder-web/#/",
+    "getApi": "https://api.kinders.develop.groony.jp/api/admin//**/*",
+    "postApi": "https://api.kinders.develop.groony.jp/api/admin//**/*",
+    "video" : false,
+    "chromeWebSecurity": false,
+   
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporterOptions": {
+            "reportDir": "cypress/reports/mochareports",
+            "quiet": true,
+            "overwrite": false,
+            "html": true,
+            "json": true
+        }
+    },
+
+    "testFiles" : [
+        
+
+        "Kinder_Phase_B/01_Login.js",
+        "Kinder_Phase_B/02_Userpermission.js",
+        "Kinder_Phase_B/03_UserRegistration.js",
+        "Kinder_Phase_B/04_UserListing.js",
+        "Kinder_Phase_B/Agencyregistration.js",
+        "Kinder_Phase_B/AgencyList.js",
+       
+        "Kinder_Phase_B/Agencydetail.js",
+        "Kinder_Phase_B/CompanyRegistration.js",
+        "Kinder_Phase_B/CompanyList.js",
+        "Kinder_Phase_B/CompanyDetail.js",
+        "Kinder_Phase_B/CompanySearchIKinder.js",
+        "Kinder_Phase_B/kinderregistration.js",
+        "Kinder_Phase_B/KinderList.js",
+        "Kinder_Phase_B/KinderDetail.js",
+        "Kinder_Phase_B/Productregistration.js",
+        "Kinder_Phase_B/Productlist.js",
+        "Kinder_Phase_B/ProductDetails.js",
+        "Kinder_Phase_B/bApp1Login.js",
+        "Kinder_Phase_B/ClassManagement_CreateClass.js",
+        "Kinder_Phase_B/ClassManagement_CreateGroup.js",
+        "Kinder_Phase_B/BasicInfoOfGarden.js",
+        "Kinder_Phase_B/Alergy.js",
+        "Kinder_Phase_B/StaffRegistraion.js",
+        "Kinder_Phase_B/StaffList.js"
+        
+        
+       
+    ]   
+}
